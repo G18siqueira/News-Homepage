@@ -67,7 +67,7 @@ Users should be able to:
 ### Links
 
 -   Solution URL: [GitHub](https://github.com/G18siqueira/News-Homepage)
--   Live Site URL: [Site](https://gs-sunnyside-agenc-pearl-omega.vercel.app/)
+-   Live Site URL: [Site](https://gs-news-homepage-nine-eta.vercel.app/)
 
 ## My process
 
