@@ -1,8 +1,13 @@
 .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 185px;
+    height: 48px;
     background-color: var(--soft-red);
     color: var(--off-white);
     text-transform: uppercase;
-    padding: 0.90rem 1.71rem;
+    // padding: 0.90rem 1.71rem;
     font-size: .9rem;
     font-weight: 700;
     letter-spacing: 5px;
