@@ -22,9 +22,7 @@ const Header = () => {
 
 	return (
 		<header className={`${styles.header} `}>
-			<div
-				className={`container ${styles.container} animation animation--from-right`}
-			>
+			<div className={`container ${styles.container} `}>
 				<div className={styles.logo}>
 					<Image src={LogoImage} alt="logo" />
 				</div>

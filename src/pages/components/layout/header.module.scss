@@ -2,11 +2,14 @@
     width: 100%;
     transition: all .2s cubic-bezier(.535, 0, 0, 1);
     transform: translateY(0);
-    position: relative;
+    position: fixed;
+    padding: 1.45rem 0 1.663rem;
     z-index: 10;
+    background-color: var(--off-white);
 
     @media (min-width: 992px) {
-        padding: 3.875rem 0 0;
+        padding: 5.563rem 0 3.5rem;
+        position: relative;
     }
 
     &:has(.navShow) {
@@ -23,7 +26,19 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 5.938rem;
+        // height: 5.938rem;
+    }
+
+    .logo {
+        @media (max-width: 992px) {
+            width: 45px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
     }
 
     nav {
@@ -66,6 +81,12 @@
         &.navShow {
             transform: translateX(0);
             opacity: 1;
+
+            @media (min-width: 992px) {
+                &::before {
+                    display: none;
+                }
+            }
         }
 
         &.navHide {
@@ -85,6 +106,7 @@
 
         a {
             transition: all .2s cubic-bezier(.535, 0, 0, 1);
+            color: var(--dark-grayish-blue);
 
             &:hover {
                 color: var(--soft-red);

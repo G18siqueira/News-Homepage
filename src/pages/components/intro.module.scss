@@ -9,6 +9,7 @@
     }
 
     .banner {
+        height: 300px;
 
         img {
             width: 100%;
@@ -24,17 +25,18 @@
         @media (min-width: 992px) {
             grid-template-columns: 290px 335px;
             gap: 0 5.625rem;
+            align-items: center;
         }
 
         h1 {
             font-size: 3rem;
-            letter-spacing: 1px;
             color: var(--very-dark-blue);
+            line-height: 1;
             font-weight: 800;
 
             @media (min-width: 992px) {
                 max-width: 290px;
-                font-size: 3.1rem;
+                font-size: 3.3rem;
             }
         }
 
@@ -45,7 +47,7 @@
                 margin: 0 0 1.75rem;
 
                 @media (min-width: 992px) {
-                    margin: 0 0 2.9rem;
+                    margin: 0px 0 2.438rem;
                 }
             }
         }

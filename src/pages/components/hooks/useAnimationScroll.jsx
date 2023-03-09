@@ -27,7 +27,7 @@ const useAnimationScroll = () => {
 
 	useEffect(() => {
 		document.querySelectorAll('.animation:not(.start)').forEach((el) => {
-			if (offset(el).top < scrollPosition + window.innerHeight * 0.9) {
+			if (offset(el).top < scrollPosition + window.innerHeight * 1) {
 				el.classList.add('start');
 			}
 		});

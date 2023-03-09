@@ -38,9 +38,9 @@ const Intro = () => {
 							the hands of the people. But is it really fulfilling
 							its promise?
 						</p>
-						<Button className={`animation animation--zoomOut`}>
-							Read more
-						</Button>
+						<div className={`animation animation--zoomOut`}>
+							<Button>Read more</Button>
+						</div>
 					</div>
 				</div>
 			</div>

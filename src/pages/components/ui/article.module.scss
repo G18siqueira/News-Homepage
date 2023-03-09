@@ -30,12 +30,14 @@
     .infos {
         h2 {
             color: var(--grayish-blue);
+            margin: 0 0 1rem;
         }
 
         h3 {
-            font-size: 1.1rem;
+            font-size: 1rem;
             letter-spacing: 1px;
             transition: all .3s cubic-bezier(.535, 0, 0, 1);
+            margin: 0 0 .5rem;
         }
 
         p {
