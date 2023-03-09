@@ -66,7 +66,7 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [GitHub](https://github.com/G18siqueira/Sunnyside-agency-landing-page)
+-   Solution URL: [GitHub](https://github.com/G18siqueira/News-Homepage)
 -   Live Site URL: [Site](https://gs-sunnyside-agenc-pearl-omega.vercel.app/)
 
 ## My process
