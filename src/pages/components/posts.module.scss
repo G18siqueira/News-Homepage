@@ -1,0 +1,24 @@
+.posts {
+
+    background-color: var(--very-dark-blue);
+    padding: 1.875rem 1.25rem;
+
+    @media (min-width: 1200px) {
+        padding: 2.375rem 1.5rem;
+    }
+
+
+    .content {
+        h1 {
+            margin: 0 0 2.5rem;
+            color: var(--soft-orange);
+        }
+
+        .postContent {
+            display: grid;
+            gap: 2.125rem 0;
+
+        }
+    }
+
+}

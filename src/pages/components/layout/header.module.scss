@@ -1,0 +1,116 @@
+.header {
+    width: 100%;
+    transition: all .2s cubic-bezier(.535, 0, 0, 1);
+    transform: translateY(0);
+    position: relative;
+    z-index: 10;
+
+    @media (min-width: 992px) {
+        padding: 3.875rem 0 0;
+    }
+
+    &:has(.navShow) {
+        &.scrollHide {
+            transform: translateY(0);
+        }
+    }
+
+    &.scrollHide {
+        transform: translateY(-5rem);
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 5.938rem;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        position: fixed;
+        gap: 2rem;
+        width: calc(100vw - 30vw);
+        height: 100vh;
+        top: 0;
+        right: 0;
+        padding: 9.438rem 0 0 1.688rem;
+        background-color: var(--off-white);
+        transition: all .5s cubic-bezier(.535, 0, 0, 1);
+        z-index: 10;
+
+        &::before {
+            content: '';
+            width: 30vw;
+            height: 100%;
+            background-color: var(--very-dark-blue);
+            position: fixed;
+            top: 0;
+            left: -30vw;
+            opacity: .6;
+        }
+
+        @media (min-width: 992px) {
+            position: initial;
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: row;
+            height: 100%;
+            padding: 0;
+            background-color: transparent;
+        }
+
+        &.navShow {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        &.navHide {
+            transform: translateX(100vw);
+            opacity: 0;
+
+
+            @media (min-width: 992px) {
+                transform: translateX(0);
+                opacity: 1;
+
+                &::before {
+                    display: none;
+                }
+            }
+        }
+
+        a {
+            transition: all .2s cubic-bezier(.535, 0, 0, 1);
+
+            &:hover {
+                color: var(--soft-red);
+            }
+        }
+
+        .btn {
+            position: absolute;
+            top: 24px;
+            right: 12px;
+        }
+    }
+
+    .btn {
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: var(--very-dark-blue);
+
+        svg {
+            font-size: 3rem;
+        }
+
+        @media (min-width: 992px) {
+            display: none;
+        }
+    }
+}

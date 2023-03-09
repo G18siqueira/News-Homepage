@@ -1,0 +1,43 @@
+.animation {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 2s cubic-bezier(.535, 0, 0, 1);
+    will-change: transform;
+    overflow: hidden;
+
+    &--zoomIn {
+        transform: scale(1.5);
+    }
+
+    &--zoomOut {
+        transform: scale(0.8);
+    }
+
+    &--opacity {
+        opacity: 0;
+    }
+
+    &--from-left {
+        transform: translateX(-100px);
+    }
+
+    &--from-right {
+        transform: translateX(100px);
+    }
+
+    &--from-top {
+        transform: translateY(-100px);
+    }
+
+    &--from-bottom {
+        transform: translateY(100px);
+    }
+
+
+    &.start {
+        opacity: 1;
+        transform: translate(0px, 0px) scale(1) !important;
+        will-change: auto;
+    }
+
+}

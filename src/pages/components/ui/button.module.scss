@@ -1,0 +1,27 @@
+.btn {
+    background-color: var(--soft-red);
+    color: var(--off-white);
+    text-transform: uppercase;
+    padding: 0.75rem 1.475rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+    border: none;
+    outline: none;
+
+    &:hover {
+        background-color: var(--very-dark-blue);
+        transition: all .3s cubic-bezier(.535, 0, 0, 1);
+
+        span {
+            transform: translateX(0.625rem);
+        }
+    }
+
+    span {
+        display: block;
+        transform: translateX(0);
+        transition: all .3s cubic-bezier(.535, 0, 0, 1);
+    }
+
+
+}
