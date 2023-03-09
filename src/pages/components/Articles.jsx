@@ -1,4 +1,4 @@
-import { Article } from './Utils';
+import Article from './ui/Article';
 
 import ArticleImage01 from '/public/assets/general/image-retro-pcs.jpg';
 import ArticleImage02 from '/public/assets/general/image-top-laptops.jpg';

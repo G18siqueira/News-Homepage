@@ -1,18 +1,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import styles from './utils.module.scss';
+import styles from './article.module.scss';
 
-export const Post = ({ title, resume }) => {
-	return (
-		<Link href="/#" aria-label="post" className={styles.post}>
-			<h2>{title}</h2>
-			<p>{resume}</p>
-		</Link>
-	);
-};
-
-export const Article = ({ className, image, alt, number, title, resume }) => {
+const Article = ({ className, image, alt, number, title, resume }) => {
 	return (
 		<Link
 			href="/#"
@@ -30,3 +21,5 @@ export const Article = ({ className, image, alt, number, title, resume }) => {
 		</Link>
 	);
 };
+
+export default Article;

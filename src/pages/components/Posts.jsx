@@ -1,4 +1,4 @@
-import { Post } from './Utils';
+import Post from './ui/Post';
 import styles from './posts.module.scss';
 import useAnimationScroll from './hooks/useAnimationScroll';
 

@@ -1,47 +1,13 @@
-.post {
-    padding: 0 0 2.25rem;
-    position: relative;
-
-    &:last-child {
-        padding: 0;
-
-        &::before {
-            display: none;
-        }
-    }
-
-    &::before {
-        content: '';
-        width: 100%;
-        height: 1px;
-        background-color: var(--dark-grayish-blue);
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    }
-
-    &:hover {
-        h2 {
-            color: var(--soft-orange);
-        }
-    }
-
-    h2 {
-        font-size: 1.1rem;
-        color: var(--off-white);
-        transition: all .3s cubic-bezier(.535, 0, 0, 1);
-    }
-}
-
 .article {
     display: flex;
     align-items: center;
     gap: 0 1.5rem;
 
     &:hover {
-        img{
+        img {
             transform: scale(1.2);
         }
+
         h3 {
             color: var(--soft-red);
         }
